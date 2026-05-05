@@ -1,0 +1,246 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background: url('../assets/maldives.jpg') center center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(3, 105, 161, 0.55) 0%,
+    rgba(14, 165, 233, 0.35) 50%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 860px;
+  width: 100%;
+}
+
+.hero__title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  letter-spacing: -1px;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 44px;
+  font-weight: 400;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero__search {
+  display: flex;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 14px;
+  padding: 8px;
+  gap: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  margin-bottom: 36px;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__search-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: var(--bg-light, #f8fafc);
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.hero__search-icon {
+  color: var(--primary, #0ea5e9);
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.hero__search-item select,
+.hero__search-item input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text-primary, #1e293b);
+  width: 100%;
+  cursor: pointer;
+}
+
+.hero__search-item select option {
+  color: var(--text-primary, #1e293b);
+}
+
+.hero__search-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--primary, #0ea5e9);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.hero__search-btn:hover {
+  background: var(--primary-dark, #0369a1);
+}
+
+.hero__btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.hero__btn--primary {
+  background: var(--accent, #f97316);
+  color: #fff;
+  border: 2px solid var(--accent, #f97316);
+}
+
+.hero__btn--primary:hover {
+  background: var(--accent-dark, #ea580c);
+  border-color: var(--accent-dark, #ea580c);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+}
+
+.hero__btn--outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.hero__btn--outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero__scroll-bar {
+  width: 2px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__scroll-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: #fff;
+  animation: scrollDown 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollDown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero__subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero__search {
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 16px;
+    padding: 12px;
+  }
+
+  .hero__search-item {
+    width: 100%;
+  }
+
+  .hero__search-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+  }
+
+  .hero__btns {
+    gap: 12px;
+  }
+
+  .hero__btn {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2.2rem;
+  }
+}
