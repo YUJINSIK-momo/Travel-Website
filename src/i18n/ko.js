@@ -4,6 +4,7 @@ const ko = {
     destinations: '여행지',
     packages: '패키지',
     gallery: '갤러리',
+    events: '이벤트',
     reviews: '후기',
     contact: '문의',
     login: '로그인',
@@ -58,6 +59,12 @@ const ko = {
     subscribe: '구독하기',
     contact: '상담 요청하기',
     contactDesc: '전문 여행 컨설턴트와 1:1 상담을 받아보세요',
+  },
+  events: {
+    title: '계절 이벤트 & 체험',
+    subtitle: '일본의 사계절을 만끽하는 특별한 경험',
+    viewAll: '모든 이벤트 보기',
+    campaign: '진행 중인 캠페인',
   },
   footer: {
     tagline: '세계를 탐험하는 가장 아름다운 방법',

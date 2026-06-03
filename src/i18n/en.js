@@ -4,6 +4,7 @@ const en = {
     destinations: 'Destinations',
     packages: 'Packages',
     gallery: 'Gallery',
+    events: 'Events',
     reviews: 'Reviews',
     contact: 'Contact',
     login: 'Login',
@@ -58,6 +59,12 @@ const en = {
     subscribe: 'Subscribe',
     contact: 'Contact Us',
     contactDesc: 'Chat with our expert travel consultants one-on-one',
+  },
+  events: {
+    title: 'Seasonal Events & Experiences',
+    subtitle: 'Special experiences to savor every season in Japan',
+    viewAll: 'View All Events',
+    campaign: 'Ongoing Campaigns',
   },
   footer: {
     tagline: 'The most beautiful way to explore the world',

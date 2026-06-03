@@ -4,6 +4,7 @@ const ja = {
     destinations: '目的地',
     packages: 'パッケージ',
     gallery: 'ギャラリー',
+    events: 'イベント',
     reviews: 'レビュー',
     contact: 'お問い合わせ',
     login: 'ログイン',
@@ -58,6 +59,12 @@ const ja = {
     subscribe: '登録する',
     contact: 'お問い合わせ',
     contactDesc: '専門旅行コンサルタントと1対1で相談できます',
+  },
+  events: {
+    title: '季節のイベント＆体験',
+    subtitle: '日本の四季を満喫する特別な体験',
+    viewAll: 'すべてのイベントを見る',
+    campaign: '開催中のキャンペーン',
   },
   footer: {
     tagline: '世界を探索する最も美しい方法',

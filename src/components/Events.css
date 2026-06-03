@@ -1,0 +1,130 @@
+.events__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.event-card {
+  position: relative;
+  border-radius: var(--radius, 16px);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow, 0 4px 20px rgba(0, 0, 0, 0.08));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg, 0 10px 40px rgba(0, 0, 0, 0.14));
+}
+
+.event-card__img-wrap {
+  position: relative;
+  padding-top: 66%;
+  overflow: hidden;
+}
+
+.event-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.event-card:hover .event-card__img {
+  transform: scale(1.07);
+}
+
+.event-card__season {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #fff;
+  background: var(--accent, #f97316);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.35);
+}
+
+.event-card__body {
+  padding: 20px 22px 24px;
+}
+
+.event-card__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary, #1e293b);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.event-card__desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary, #64748b);
+  line-height: 1.65;
+}
+
+/* 캠페인 배너 (사용자 제공 프로모션 이미지) */
+.campaign {
+  margin-bottom: 56px;
+}
+
+.campaign__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary, #1e293b);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.campaign__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.campaign__banner {
+  border-radius: var(--radius, 16px);
+  overflow: hidden;
+  box-shadow: var(--shadow, 0 4px 20px rgba(0, 0, 0, 0.08));
+  cursor: pointer;
+  aspect-ratio: 16 / 10;
+  background: var(--bg-light, #f8fafc);
+}
+
+.campaign__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.campaign__banner:hover img {
+  transform: scale(1.05);
+}
+
+.events__grid--page {
+  margin-top: 8px;
+}
+
+@media (max-width: 1024px) {
+  .events__grid,
+  .campaign__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .events__grid,
+  .campaign__grid {
+    grid-template-columns: 1fr;
+  }
+}

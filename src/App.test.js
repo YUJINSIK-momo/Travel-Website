@@ -18,3 +18,9 @@ test('여행지 전용 페이지(/destinations)가 렌더된다', () => {
   // 기본 언어(ko)의 여행지 섹션 제목이 노출되는지 확인
   expect(screen.getAllByText(/여행지/).length).toBeGreaterThan(0);
 });
+
+test('이벤트 전용 페이지(/events)가 렌더된다', () => {
+  window.location.hash = '#/events';
+  render(<App />);
+  expect(screen.getAllByText(/이벤트/).length).toBeGreaterThan(0);
+});

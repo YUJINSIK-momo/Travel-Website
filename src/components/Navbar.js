@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { key: 'destinations', type: 'route', to: '/destinations' },
   { key: 'packages', type: 'route', to: '/packages' },
   { key: 'gallery', type: 'route', to: '/gallery' },
+  { key: 'events', type: 'route', to: '/events' },
   { key: 'reviews', type: 'section', section: 'reviews' },
   { key: 'contact', type: 'section', section: 'contact' },
 ];
