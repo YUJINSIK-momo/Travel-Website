@@ -21,12 +21,14 @@ const en = {
     subtitle: 'Explore the most breathtaking places around the world',
     explore: 'Explore',
     from: 'from',
+    viewAll: 'View All Destinations',
   },
   packages: {
     title: 'Travel Packages',
     subtitle: 'Handpicked packages for the perfect getaway',
     viewDetails: 'View Details',
     book: 'Book Now',
+    viewAll: 'View All Packages',
   },
   why: {
     title: 'Why Choose Us?',
@@ -43,6 +45,7 @@ const en = {
   gallery: {
     title: 'Travel Gallery',
     subtitle: 'Beautiful moments from around the world',
+    viewAll: 'View Full Gallery',
   },
   reviews: {
     title: 'Customer Reviews',

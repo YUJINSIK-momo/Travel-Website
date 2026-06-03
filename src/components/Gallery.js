@@ -1,30 +1,11 @@
 import React from 'react';
-import { FiZoomIn } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-
-import img1 from '../assets/images/img-1.jpg';
-import img2 from '../assets/images/img-2.jpg';
-import img3 from '../assets/images/img-3.jpg';
-import img4 from '../assets/images/img-4.jpg';
-import img5 from '../assets/images/img-5.jpg';
-import img6 from '../assets/images/img-6.jpg';
-import img7 from '../assets/images/img-7.jpg';
-import img8 from '../assets/images/img-8.jpg';
-import img9 from '../assets/images/img-9.jpg';
-
+import galleryImages from '../data/gallery';
+import GalleryGrid from './GalleryGrid';
 import './Gallery.css';
 
-const galleryImages = [
-  { src: img1, tall: true },
-  { src: img2, tall: false },
-  { src: img3, tall: false },
-  { src: img4, tall: false },
-  { src: img5, tall: false },
-  { src: img6, tall: true },
-  { src: img7, tall: false },
-  { src: img8, tall: false },
-  { src: img9, tall: false },
-];
+const HOME_COUNT = 9;
 
 function Gallery() {
   const { t } = useLanguage();
@@ -36,20 +17,11 @@ function Gallery() {
           <h2 className="section__title">{t.gallery.title}</h2>
           <p className="section__subtitle">{t.gallery.subtitle}</p>
         </div>
-        <div className="gallery__grid">
-          {galleryImages.map((item, i) => (
-            <div
-              key={i}
-              className={`gallery__item${item.tall ? ' gallery__item--tall' : ''}`}
-            >
-              <img src={item.src} alt={`Travel ${i + 1}`} />
-              <div className="gallery__item__overlay">
-                <div className="gallery__item__icon">
-                  <FiZoomIn />
-                </div>
-              </div>
-            </div>
-          ))}
+        <GalleryGrid images={galleryImages.slice(0, HOME_COUNT)} />
+        <div className="section__cta">
+          <Link to="/gallery" className="view-all-btn">
+            {t.gallery.viewAll}
+          </Link>
         </div>
       </div>
     </section>

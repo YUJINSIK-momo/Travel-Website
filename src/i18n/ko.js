@@ -21,12 +21,14 @@ const ko = {
     subtitle: '전 세계 감동적인 여행지를 탐험해보세요',
     explore: '자세히 보기',
     from: '부터',
+    viewAll: '전체 여행지 보기',
   },
   packages: {
     title: '추천 여행 패키지',
     subtitle: '당신만을 위한 완벽한 여행 패키지',
     viewDetails: '자세히 보기',
     book: '예약하기',
+    viewAll: '전체 패키지 보기',
   },
   why: {
     title: '왜 TRVL인가요?',
@@ -43,6 +45,7 @@ const ko = {
   gallery: {
     title: '여행 갤러리',
     subtitle: '아름다운 순간들을 함께 나눠보세요',
+    viewAll: '갤러리 전체 보기',
   },
   reviews: {
     title: '고객 후기',

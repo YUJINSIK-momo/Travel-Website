@@ -60,6 +60,34 @@ const packages = [
     price: '₩2,850,000',
     originalPrice: '₩3,500,000',
   },
+  {
+    id: 5,
+    name: { ko: '산토리니 로맨틱 에스케이프', en: 'Santorini Romantic Escape', ja: 'サントリーニ・ロマンティック' },
+    description: {
+      ko: '에게해의 석양을 바라보는 절벽 위 호텔과 프라이빗 요트 투어가 포함된 커플 여행.',
+      en: 'A couples retreat with a clifftop hotel overlooking the Aegean sunset and a private yacht tour.',
+      ja: 'エーゲ海の夕日を望む崖の上のホテルとプライベートヨットツアー付きのカップル旅行。',
+    },
+    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80',
+    duration: { ko: '6일 5박', en: '6 Days / 5 Nights', ja: '6日間 / 5泊' },
+    style: { ko: '럭셔리', en: 'Luxury', ja: 'ラグジュアリー' },
+    price: '₩3,680,000',
+    originalPrice: '₩4,500,000',
+  },
+  {
+    id: 6,
+    name: { ko: '스위스 알프스 트레킹', en: 'Swiss Alps Trekking', ja: 'スイスアルプス・トレッキング' },
+    description: {
+      ko: '인터라켄과 융프라우를 잇는 파노라마 트레일을 전문 가이드와 함께 걷는 7일 일정.',
+      en: 'A 7-day guided journey along the panoramic trails connecting Interlaken and Jungfrau.',
+      ja: 'インターラーケンとユングフラウを結ぶパノラマトレイルを専門ガイドと歩く7日間。',
+    },
+    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+    duration: { ko: '7일 6박', en: '7 Days / 6 Nights', ja: '7日間 / 6泊' },
+    style: { ko: '어드벤처', en: 'Adventure', ja: 'アドベンチャー' },
+    price: '₩2,490,000',
+    originalPrice: '₩2,980,000',
+  },
 ];
 
 export default packages;

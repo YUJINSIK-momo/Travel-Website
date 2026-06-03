@@ -38,6 +38,45 @@ const reviews = [
     avatar: 'https://i.pravatar.cc/100?img=12',
     date: '2025.01',
   },
+  {
+    id: 4,
+    name: { ko: '최유나', en: 'Yuna Choi', ja: 'チェ・ユナ' },
+    destination: { ko: '산토리니', en: 'Santorini', ja: 'サントリーニ' },
+    rating: 5,
+    text: {
+      ko: '절벽 위 호텔에서 본 석양은 평생 잊지 못할 거예요. 일정 하나하나가 세심하게 준비돼 있어서 정말 편안한 여행이었습니다.',
+      en: 'The sunset from our clifftop hotel is something I will never forget. Every detail was thoughtfully arranged for a truly relaxing trip.',
+      ja: '崖の上のホテルから見た夕日は一生忘れられません。一つ一つの日程が丁寧に準備されていて本当に快適な旅でした。',
+    },
+    avatar: 'https://i.pravatar.cc/100?img=32',
+    date: '2025.04',
+  },
+  {
+    id: 5,
+    name: { ko: '정태현', en: 'Taehyun Jung', ja: 'チョン・テヒョン' },
+    destination: { ko: '스위스 알프스', en: 'Swiss Alps', ja: 'スイスアルプス' },
+    rating: 5,
+    text: {
+      ko: '융프라우 트레킹은 인생 최고의 경험이었어요. 가이드분이 사진도 정말 잘 찍어주셔서 추억이 가득합니다.',
+      en: 'Trekking around Jungfrau was the experience of a lifetime. Our guide even took amazing photos — so many memories!',
+      ja: 'ユングフラウのトレッキングは人生最高の経験でした。ガイドさんが写真も上手に撮ってくれて思い出がいっぱいです。',
+    },
+    avatar: 'https://i.pravatar.cc/100?img=13',
+    date: '2025.05',
+  },
+  {
+    id: 6,
+    name: { ko: '한소희', en: 'Sohee Han', ja: 'ハン・ソヒ' },
+    destination: { ko: '발리', en: 'Bali', ja: 'バリ島' },
+    rating: 4,
+    text: {
+      ko: '발리의 자연과 사원이 정말 인상적이었어요. 가성비도 훌륭하고 직원분들이 친절해서 또 가고 싶어요.',
+      en: 'The nature and temples of Bali were so impressive. Great value and friendly staff — I want to go back!',
+      ja: 'バリの自然と寺院が本当に印象的でした。コスパも良くスタッフも親切で、また行きたいです。',
+    },
+    avatar: 'https://i.pravatar.cc/100?img=45',
+    date: '2025.05',
+  },
 ];
 
 export default reviews;

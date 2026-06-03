@@ -21,12 +21,14 @@ const ja = {
     subtitle: '世界中の素晴らしい場所を探索しよう',
     explore: '詳しく見る',
     from: 'から',
+    viewAll: 'すべての目的地を見る',
   },
   packages: {
     title: 'おすすめパッケージ',
     subtitle: '完璧な旅行のためのパッケージ',
     viewDetails: '詳細を見る',
     book: '予約する',
+    viewAll: 'すべてのパッケージを見る',
   },
   why: {
     title: 'なぜTRVLを選ぶの？',
@@ -43,6 +45,7 @@ const ja = {
   gallery: {
     title: '旅行ギャラリー',
     subtitle: '美しい瞬間をシェアしよう',
+    viewAll: 'ギャラリーをすべて見る',
   },
   reviews: {
     title: 'お客様の声',
